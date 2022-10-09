@@ -67,7 +67,7 @@ const getEvens = (startNum, endNum) => {
 	
 	const upperBound = Math.max(startNum, endNum);
 	let lowerBound = Math.min(startNum, endNum);
-  if (Math.abs(lowerBound % 2) === 1) lowerBound++;
+	if (Math.abs(lowerBound % 2) === 1) lowerBound++;
 	const length = (upperBound - lowerBound) / 2 + 1;
 	array = Array.from({length}, (v, i) => {return lowerBound + i*2;});
 
